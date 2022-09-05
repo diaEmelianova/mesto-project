@@ -6,5 +6,6 @@
 
 адаптивный дизайн; позиционирующий; семантический HTML; flexbox; сетка.
 
+ссылка на проект: https://diaemelianova.github.io/mesto-project/
 
 
