@@ -15,6 +15,7 @@
     border-radius: 2px;
     transition: opacity .5s;
     cursor: pointer;
+    border-radius: 2px;
 }
 
 .popup__button:hover {
@@ -22,9 +23,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .popup__buuton {
+    .popup__button {
         width: 100%;
         width: 238px;
-        margin-bottom: 0;
+        margin: 15px 0 0;
     }
 }
