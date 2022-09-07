@@ -10,5 +10,6 @@
     .popup__fieldset {
         width: 238px;
         margin-top: 75px;
+        margin-bottom: 25px;
     }
 }
