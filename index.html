@@ -26,7 +26,7 @@
             </section>
             <section class="elements">
                 <ul class="elements__item">
-                    <li class="element">
+                    <!--<li class="element">
                         <img class="element__image" src="./images/alex-azabache-b5a_p1JWHX8-unsplash.jpg"
                             alt="воздушные шары в Кападокии">
                         <div class="element__description">
@@ -73,7 +73,7 @@
                             <h2 class="element__title">Япония</h2>
                             <button class="element__like" type="button"></button>
                         </div>
-                    </li>
+                    </li>-->
                 </ul>
             </section>
         </main>
@@ -85,15 +85,45 @@
                 <button type="button" class="button button-close" aria-label="Закрыть"></button>
                 <h2 class="popup__header">Редактировать профиль</h2>
                 <fieldset class="popup__fieldset">
-                    <input type="text" name="name" value="Жак-Ив Кусто" class="popup__text" placeholder="Имя">
-                    <input type="text" name="subtitle" value="Исследователь океана" class="popup__text"
+                    <input id="name" type="text" name="name" value="Жак-Ив Кусто" class="popup__text" placeholder="Имя">
+                    <input id="job" type="text" name="subtitle" value="Исследователь океана" class="popup__text"
                         placeholder="Профессия">
                     <button type="submit" class="popup__button">Cохранить</button>
                 </fieldset>
             </form>
 
         </div>
+        <div class="popup popup__add">
+            <div class="popup__form">
+                <button type="button" id="popupAddCloseButton" class="button button-close" aria-label="Закрыть"></button>
+                <h2 class="popup__header">Новое место</h2>
+                <fieldset class="popup__fieldset">
+                    <input type="text" id="nameNewCard" name="title" value="" class="popup__text" placeholder="Название">
+                    <input type="url" id="linkNewCard" name="subtitle" value="" class="popup__text" placeholder="Ссылка на картинку">
+                    <button type="submit" id="buttonCreateCard" class="popup__button">Создать</button>
+                </fieldset>
+            </div>
+        </div>
     </div>
+    <div class="popup popup_image">
+        <figure class="popup__container-image">
+            <button type="button" id="popupImageCloseButton" class="button button-close" aria-label="Закрыть">
+            </button>
+            <img src="" alt="" class="popup__image">
+            <figcaption class="popup__figcaption"></figcaption>
+        </figure>
+    </div>
+    <template id="card">
+            <li class="element">
+                <button class="element__delete" type="button" aria-label="Удалть"></button>
+                <img class="element__image"  src="" alt="">
+                <div class="element__description">
+                    <h2 class="element__title"></h2>
+                    <button class="element__like" type="button" aria-label="Лайк"></button>
+                </div>
+            </li>
+    </template>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
